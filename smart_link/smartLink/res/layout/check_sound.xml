@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#97CBFF" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp" >
+
+        <Button
+            android:id="@+id/btnSoundBack"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:background="@drawable/common_title_back" />
+
+        <TextView
+            android:id="@+id/tvPrepareCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/connect_camera_textview"
+            android:text="第一步    准备摄像机"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/heardSound"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#FF2D2D"
+        android:text="已经听到了提示音"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingBottom="100dp"
+        android:src="@drawable/set_camera" />
+
+    <com.example.smartlink.ui.CustomTextView
+        android:id="@+id/noSound"
+        style="@style/UnderlineTextViewStyle"
+        android:layout_above="@+id/heardSound"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:text="没有听到声音？" />
+
+</RelativeLayout>

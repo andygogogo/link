@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="60dp"
+    android:id="@+id/rlWifi" >
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/stat_sys_signal_evdo_1" />
+
+    <TextView
+        android:id="@+id/tvSignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSSID"
+        android:layout_alignBottom="@+id/tvSSID"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:text="wifi信号强度"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvSSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="wifi信号的SSID" />
+  
+</RelativeLayout>  

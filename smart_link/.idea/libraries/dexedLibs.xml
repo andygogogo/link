@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/smartLink/bin/dexedLibs/android-support-v4-8e2292672766a5be5f86cc5993ac4bcc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/smartLink/bin/dexedLibs/bugly_crash_release__2.1.1-366055d0459e5ea574244fab2bd18a8b.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

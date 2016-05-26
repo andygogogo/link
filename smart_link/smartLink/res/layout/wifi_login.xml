@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#97CBFF" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/btnWifiBack"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/common_title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/connect_camera_textview"
+            android:text="第二步    连接无线网"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llWifiLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:orientation="vertical"
+        android:paddingTop="40dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择摄像机要连接的WiFi"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <EditText
+                android:id="@+id/etSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/wifi_login"
+                android:drawableLeft="@drawable/wifi"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:editable="false" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ivWifis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/etSSID"
+                android:layout_centerVertical="true"
+                android:src="@drawable/down_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/wifi_login"
+                android:drawableLeft="@drawable/lock2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="请输入WIFI密码"
+                android:inputType="textPassword"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvDisplayPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/etPassword"
+                android:layout_alignBottom="@+id/etPassword"
+                android:layout_alignRight="@+id/etPassword"
+                android:layout_marginRight="3dp"
+                android:text="显示密码"
+                android:textColor="@android:color/black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.example.smartlink.ui.CustomTextView
+        android:id="@+id/tvWifiRequired"
+        style="@style/UnderlineTextViewStyle"
+        android:layout_below="@id/llWifiLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="摄像机对WiFi有什么要求？" />
+
+    <Button
+        android:id="@+id/btnConnWifi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWifiRequired"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="连接WiFi"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#97CBFF" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:background="@drawable/common_title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/connect_camera_textview"
+            android:text="第一步    准备摄像机"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:gravity="center"
+        android:text="请查看摄像机是否"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/splashedButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#FF2D2D"
+        android:text="绿灯已经闪烁"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/green"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="绿灯闪烁"
+        android:textColor="#009100"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/green"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingBottom="100dp"
+        android:src="@drawable/check_green_light2" />
+
+    <ImageView
+        android:id="@+id/blueDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/camera"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/green_dot" />
+
+    <com.example.smartlink.ui.CustomTextView
+        android:id="@+id/noSplash"
+        android:layout_above="@+id/splashedButton"
+        android:layout_alignLeft="@+id/top"
+        android:layout_marginLeft="27dp"
+        android:gravity="left"
+        android:text="绿灯没有闪烁？"
+        style="@style/UnderlineTextViewStyle" />
+
+    <com.example.smartlink.ui.CustomTextView
+        android:id="@+id/addBySound"
+        android:layout_alignBaseline="@+id/noSplash"
+        android:layout_alignBottom="@+id/noSplash"
+        android:layout_alignRight="@+id/top"
+        android:layout_marginRight="14dp"
+        android:gravity="right"
+        android:text="声波添加设备"
+        style="@style/UnderlineTextViewStyle" />
+
+</RelativeLayout>

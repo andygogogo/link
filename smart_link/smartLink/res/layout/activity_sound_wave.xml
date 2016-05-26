@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlSoundWave"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#97CBFF" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp" >
+
+        <Button
+            android:id="@+id/btnSoundWaveBack"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:background="@drawable/common_title_back" />
+
+        <TextView
+            android:id="@+id/tvPrepareCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/connect_camera_textview"
+            android:text="第二步    连接无线网"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvWaitCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSound"
+        android:layout_centerHorizontal="true"
+        android:text="发送完毕，等待摄像机发出"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvSendAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWaitCamera"
+        android:layout_centerHorizontal="true"
+        android:text="如果没有听到提示，请再次发送声波"
+        android:textSize="13dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvSendAgain" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/ivSoundWave"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/send_sound" />
+
+            <com.natasa.progressviews.CircleProgressBar
+                android:layout_marginTop="12dp"
+                android:id="@+id/circle_progress"
+                android:layout_width="205dp"
+                android:layout_height="205dp"
+                android:layout_gravity="center"
+                app:bar_width="10dp"
+                app:progress_width="10dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.example.smartlink.ui.CustomTextView
+        android:id="@+id/noSuccess"
+        style="@style/UnderlineTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/btnSoundWaveNext"
+        android:gravity="center_horizontal"
+        android:text="没有听到“接受成功”?" />
+
+    <Button
+        android:id="@+id/btnSoundWaveNext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#FF9797"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

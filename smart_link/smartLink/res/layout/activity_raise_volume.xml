@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#97CBFF" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp" >
+
+        <Button
+            android:id="@+id/btnRaiseVolumeBack"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:background="@drawable/common_title_back" />
+
+        <TextView
+            android:id="@+id/tvPrepareCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/connect_camera_textview"
+            android:text="第一步    准备摄像机"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:text="请调大手机音量"
+        android:textSize="20dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvLight"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/tvVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="将摄像机置于光线充足的地方"
+         android:textSize="20dp"
+        android:textColor="@android:color/black"  />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tvLight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingBottom="100dp"
+        android:src="@drawable/big_volumn" />
+
+     <Button
+        android:id="@+id/btnNext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#FF2D2D"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+</RelativeLayout>

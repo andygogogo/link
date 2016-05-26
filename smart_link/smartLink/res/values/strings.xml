@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">smartLink</string>
+    <string name="hiflying_smartlinker_ssid">ssid</string>
+    <string name="hiflying_smartlinker_password">password</string>
+    <string name="hiflying_smartlinker_start">start</string>
+    <string name="hiflying_smartlinker_stop">stop</string>
+    <string name="hiflying_smartlinker_waiting">waiting</string>
+    <string name="hiflying_smartlinker_no_wifi_connectivity">connectivity</string>
+    <string name="hiflying_smartlinker_new_module_found">new module found</string>
+    <string name="hiflying_smartlinker_completed">completed</string>
+    <string name="hiflying_smartlinker_timeout">timeout</string>
+    
+    <string name="action_settings">setting</string>
+    <string name="send_sound_wave"><Data><![CDATA[点击<font color="#FF2D2D"><b>发送声波</b></font>按钮]]></Data></string>
+    <string name="success_prompt"><Data><![CDATA[<font color="#FF2D2D"><b>接收成功</b></font>提示]]></Data></string>
+    <string name="conn_wifi">让摄像机连上WiFi无线网</string>
+    <string name="progress">progress</string>
+</resources>
